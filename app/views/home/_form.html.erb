@@ -1,0 +1,187 @@
+<%= form_tag("/getData") do  |f|%>
+                
+    <fieldset>
+    
+
+    <div class="row" id="client-info">
+                    
+        <div class="col-md-6" id="fName">
+            
+            <label for="lblFname">Company Name:</label>
+
+            <%= text_field_tag :company_name, "", class: 'form-control' ,:required => true%>
+            
+        </div>
+            
+      <div class="col-md-6" id="phoneNumber">
+         
+      <label for="lblPhone">Phone Number:</label>
+      <%= text_field_tag :phone_number, "", class: 'form-control' ,:required => true%>
+    </div>
+    <div class="col-md-6" id="email">
+         
+    <label for="lblEmail">Email:</label>
+    <%= text_field_tag :email, "", class: 'form-control',:required => true %>
+
+ </div>
+        
+        
+          
+        </div>
+        <div class="row">
+                <div class="col-md-8">
+                    <!-- Drop Menu -->
+                    <label for="buildings">Choose the coresponding building type:</label>
+
+                    <select onchange="mainFunction()" name="buildings" id="buildingsType">
+                    <option value="select">--- Please Select ---</option>
+                    <option value="residential">Residential</option>
+                    <option value="corporate">Corporate</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="hybrid">Hybrid</option>
+                    </select>
+                    </div>
+                
+        </div>
+                <!-- Show The options Fields -->
+        <div class="row" id="step2" style="visibility: hidden">
+            
+                    <div class="col">
+
+                        <label><b>These are our options for a</b> <span id="selectedBuilding"> </span> Building:</label>
+                        
+                        
+                    </div>
+                    </br>
+        </div>
+            <!-- Fields Sections -->
+        <div class="row" id="input-fields" style="visibility: hidden">
+                    
+                        <div class="col-md-6" id="number-of-apartments" style="display: none;">
+                         
+                            <label for="lblApt">Number of number of Apartments:</label>
+                            <input name="num_of_apts" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57"  onkeyup="actionListener()"  class="form-control" id="txtApt">
+                    
+                         </div>
+                            
+                        <div class="col-md-6" id="number-of-floors" style="display: none;" >
+                            <label for="lblFloor">Number Floors:</label>
+                            <input name="num_of_floors" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57"  onkeyup="actionListener()" placeholder="" class="form-control" id="txtFloor">
+                            
+                        </div>		
+                        <div class="col-md-6" id="number-of-basement" style="display: none;" >
+                            <label for="lblBasement">Number of Basement:</label>
+                            <input name="num_of_basements" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57"  onkeyup="actionListener()" placeholder="" class="form-control" id="txtBasement">
+                            
+                        </div>	
+                        <div class="col-md-6" id="number-of-companies" style="display: none;">
+             
+                            <label for="lblCompagnies">Number of Companies:</label>
+                            <input name="num_of_companies" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57" onkeyup="actionListener()" placeholder="" class="form-control" id="txtCompanies">
+                    
+                         </div>
+                            
+                        <div class="col-md-6" id="number-of-parking-spots" style="display: none;" >
+                            <label for="lblParking">Number Parking Spots:</label>
+                            <input name="num_of_parking" type="number"  step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57" onkeyup="actionListener()" placeholder="" class="form-control" id="txtParking">
+                            
+                        </div>		
+                        <div class="col-md-6" id="number-of-elevators" style="display: none;" >
+                            <label for="lblElevators">Number of Elevators:</label>
+                            <input name="num_of_elevators" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57"  onkeyup="actionListener()" placeholder="" class="form-control" id="txtElevators">
+                            
+                        </div>	
+                        <div class="col-md-6" id="number-of-corporations" style="display: none;" >
+                            <label for="lblCorporation">Number of Corporation:</label>
+                            <input name="num_of_corporations" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57" onkeyup="actionListener()"  placeholder="" class="form-control" id="txtCorporation">
+                            
+                        </div>		
+                        <div class="col-md-6" id="maximum-occupancy" style="display: none;" >
+                            <label for="lblOccupancy">Maximum Occupancy:</label>
+                            <input name="max_occupancy" type="number" step="1" onkeypress="return event.charCode >= 48 && event.charCode <=57" onkeyup="actionListener()" placeholder="" class="form-control" id="txtOccupancy">
+                            
+                        </div>	
+                        <div class="col-md-6" id="business-hours" style="display: none;" >
+                            <label for="lblHours">Business Hours:</label>
+                            <input name="business_hours" type="number" step="1" maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <=57" onkeyup="actionListener()" class="form-control" id="txtHours">
+                            
+                        </div>		
+                        
+                        
+        </div>
+    </br></br>
+    <div class="row">
+            <div class="col-md-6" id="step3" style="visibility: hidden;">
+                <h4>Please choose the type of the elevator:</h4>
+        </div>
+        <div class="col-md-6" id="step4" style="visibility: hidden;" >
+            <h4>Summary:</h4>
+    </div>
+    </div>
+    <div>
+            <div class="row" id="input-fields-2" style="visibility: hidden;">
+                
+                 <div class="col-md-6" onclick="actionListener()">
+                    
+                    <label class="radio">
+                        <input type="radio" name="radioSelect" id="standard" value="standard" checked>
+                        <i></i> Standard
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radioSelect" id="premium" value="premium">
+                        <i></i> Premium
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radioSelect" id="excelium"  value="excelium">
+                        <i></i> Excelium
+                    </label>
+                </div>
+                <div class="col-md-6" >
+                        
+                        <div style="display:flex; flex-direction: row;" id="elevator-amount">
+                            <label for="lblAmntElevator">N. of Elevator:</label>
+                            <input name="amntElevator" type="text" readonly="readonly"  class="form-control" id="txtAmntElevator">
+                            
+                        </div>
+                        <div style="display:flex; flex-direction: row;" id="elevator-unit-price">
+                            <label for="lblPriceElevator">Price per Elevator:</label>
+                            <input name="priceElevator" type="text" readonly="readonly"   class="form-control" id="txtPriceElevator">
+                            
+                        </div>
+                        <div style="display:flex; flex-direction: row;" id="elevator-total-price">
+                            <label for="lblElevatorTotalPrice">Total Price for Elevators:</label>
+                            <input name="priceElevatorTotal" type="text" readonly="readonly"   class="form-control" id="txtElevatorTotalPrice">
+                            
+                        </div>	
+                        <div style="display:flex; flex-direction: row;" id="installation-fees">
+                            <label for="lblInstallationFee">Installation Fee:</label>
+                            <input name="installation_fee" type="text" readonly="readonly"   class="form-control" id="txtInstallationFee">
+                            
+                        </div>	
+                        <div style="display:flex; flex-direction: row;" id="final-price">
+                            <label for="lblTotal">Total Cost:</label>
+                            
+                            <input name="total_price" type="text"   readonly="readonly"  class="form-control" id="txtTotal">
+                            
+                        </div>		
+                       
+                </div>
+                
+            
+            </div>
+            <div id="input-fields-3" style="visibility: hidden;">
+            <%= submit_tag "Submit" , class:"btn btn-warning btn-lg" ,:id => "btnSubmit"%>
+            <button class="btn btn-warning btn-lg" onclick="emptyFields()">Reset</button>
+
+            </div>  
+            
+    </div>
+    
+   
+            
+                
+                
+    </fieldset>
+
+    
+    <% end %>   

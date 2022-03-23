@@ -1,0 +1,1116 @@
+
+ <style>
+ .form-popup {
+   display: block;
+   position: fixed;
+   top: 10px;
+   right: 5px;
+   z-index: 100024;
+ }
+ }
+ 
+ 
+ </style>
+	 <div class="form-popup" id="message">
+	 
+			 <% flash.each do |type,message| %>
+ 
+			 <div class='alert alert-<%= type %>'> 
+			 <%= message %>&nbsp&nbsp
+	 
+			 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			</div>
+ 
+			 <% end %>
+			 
+ 
+	 </div> 
+<script>
+
+function closeForm() {
+  document.getElementById("message").style.display = "none";
+}
+</script>
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			
+			
+
+
+
+			<!-- REVOLUTION SLIDER -->
+			<div class="slider fullwidthbanner-container roundedcorners">
+			
+				<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
+					<ul class="hide">
+					
+						<!-- SLIDE  -->
+						<li data-transition="parallaxtoleft" data-slotamount="7" data-delay="7000"  data-masterspeed="600"  data-saveperformance="off"  data-title="Rocket Elevator">
+							<!-- MAIN IMAGE -->
+						
+							<%= image_tag ("AdobeStock_179073967.jpg") %>   
+							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+							data-x="50"
+							data-y="100" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Cubic.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 2; color:#fff; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+								Elevators since 1976
+						</div>
+
+						<div class="tp-caption skewfromrightshort tp-resizeme"
+							data-x="50"
+							data-y="300" 
+							data-speed="500"
+							data-start="1000"
+							data-easing="easeInCirc"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
+								If you want the fastest elevator's you have come to the right place.
+						</div>
+
+						<div class="tp-caption sfb tp-resizeme"
+							data-x="50"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeIn"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 4; max-width: auto;">
+								<a class="btn btn-warning btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+
+
+								
+						</div>
+
+						<div class="tp-caption sfb tp-resizeme"
+							data-x="250"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeInOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+								<a class="btn btn-default btn-lg" href="quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+
+						</div>
+					</li>
+
+					<!-- SLIDE  -->
+					<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Residential">
+						<!-- MAIN IMAGE -->
+						<%= image_tag ("AdobeStock_33298664.jpg") %>
+
+						<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+
+						<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+							data-x="50"
+							data-y="100" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Cubic.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 2; color:#fff; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+								Check out our Residential Services
+						</div>
+
+						<div class="tp-caption skewfromrightshort tp-resizeme"
+							data-x="50"
+							data-y="300" 
+							data-speed="500"
+							data-start="1000"
+							data-easing="easeInCirc"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
+								Rocket ELevators has some of the most innovative home elevator designs in the world
+
+						</div>
+
+						<div class="tp-caption sfb tp-resizeme"
+							data-x="50"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeIn"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 4; max-width: auto;">
+								<a class="btn btn-warning btn-lg" href="residential.html">RESIDENTIAL SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+						</div>
+
+					</li>
+
+					<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Corporate">
+						<!-- MAIN IMAGE -->
+						<%= image_tag ("slider1200x735/AdobeStock_78149317.png") %>
+
+						<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+
+						<div class="tp-caption font-roboto skewfromleft tp-resizeme"
+							data-x="50"
+							data-y="100" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Cubic.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 2; color:#fff; font-size:65px; line-height:85px; font-weight:bold; letter-spacing:0; text-shadow:none;">
+								Check out our corporate building services
+						</div>
+
+						<div class="tp-caption skewfromrightshort tp-resizeme"
+							data-x="50"
+							data-y="300" 
+							data-speed="500"
+							data-start="1000"
+							data-easing="easeInCirc"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 3; font-size:20px; color:#fff; font-weight:300; text-shadow:none;">
+								Rocket Elevators is recognised world wide for it's achievements in corporate elevator desgin
+						</div>
+
+						<div class="tp-caption sfb tp-resizeme"
+							data-x="50"
+							data-y="410" 
+							data-speed="500"
+							data-start="1500"
+							data-easing="Power3.easeIn"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="1"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							style="z-index: 4; max-width: auto;">
+								<a class="btn btn-warning btn-lg" href="commercial.html">CORPORATE SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+						</div>
+							
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+			<!-- /REVOLUTION SLIDER -->
+
+
+			<hr class="m-0" /><!-- 1px line separator -->
+
+
+			<!-- BUTTON CALLOUT -->
+			<a href="/#contact" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">
+				<span class="font-lato fs-30"> 
+					<strong>Contact us &raquo;</strong>
+				</span>
+			</a>
+			<!-- /BUTTON CALLOUT -->
+
+			
+			<!-- Services -->
+			<section id="services">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-4">
+								
+								<%= image_tag("1280x960/AdobeStock_53477661.jpg", :class=> "img-fluid") %>
+
+							</a>
+
+							<h3 class="mt-10">Award winning projects</h3>
+							<p>Rocket Elevator's has one numerous awards, and participated in many projects. Click below to see previous Rocket Elevator projects.</p>
+							<a href="#portfolio" class="btn btn-default">PAST PROJECTS</a>
+						</div>
+
+						<div class="col-sm-4">
+								
+								<%= image_tag("1280x960/AdobeStock_33975620.jpg", :class=> "img-fluid") %>
+							</a>
+							<h3 class="mt-10">Residential Services</h3>
+							<p>See more details about our Residential Services and past residential projects.</p>
+							<a href="residential.html" class="btn btn-default">RESIDENTIAL INFO</a>
+						</div>
+
+						<div class="col-sm-4">
+							<%= image_tag("1280x960/AdobeStock_66781279.png", :class=> "img-fluid") %>
+							<h3 class="mt-10">Corporate Services</h3>
+							<p>See more details about our Corporate Services and past corporate projects.</p>
+							<a href="commercial.html" class="btn btn-default">CORPORATE INFO</a>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /Services -->
+
+			
+
+
+			<!-- Parallax -->
+			<section class="parallax parallax-1" style="background-image: url(<%= asset_path 'ribbon.png' %>);">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="text-center">
+						<h2 class="fs-40 fw-300">in business since 1976</h2>
+						<a class="btn btn-default btn-lg" href="quote.html">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
+						&nbsp; OR &nbsp; 
+						<a class="btn btn-warning btn-lg" href="#services">OUR SERVICES <i class="fa fa-angle-right"></i></a>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Parallax -->
+
+			<!-- PORTFOLIO -->
+			<section id="Portfolio">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Portfolio</h2>
+					</div>
+
+					<div class="text-center">
+						<ul class="nav nav-pills mix-filter mb-60">
+							<li data-filter="all" class="filter active"><a href="#">All</a></li>
+							<li data-filter="corporate" class="filter"><a href="#">Corporate</a></li>
+							<li data-filter="residential" class="filter"><a href="#">Residential</a></li>
+							<li data-filter="awards" class="filter"><a href="#">Awards</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="portfolio" class="portfolio-nogutter">
+
+						<div class="row mix-grid">
+						<%# if this is removed, images are shown one by one on left side %>
+
+							<div class="col-md-3 col-sm-3 mix corporate awards"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												
+												<%= link_to 'assets/1280x960/AdobeStock_103570025.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+										<%= image_tag("1280x960/AdobeStock_103570025.png", :class=> "img-fluid") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Award wining Elevator with the most floors in the world</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_122227340.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+												</a>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_122227340.png", :class=> "img-fluid") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Microsoft office project</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix residential"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_124493370.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										
+										<%= image_tag("1280x960/AdobeStock_124493370.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Investment Banker private home project</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_130711085.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										
+										<%= image_tag("1280x960/AdobeStock_130711085.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Mall Montreal</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_3294993.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_3294993.png", :width => "600", :height => "399", :class=> "img-fluid") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>West Edmonton Mall</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_33298664.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_33298664.png", :width => "600", :height => "399", :class=> "img-fluid") %>
+										
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Court House Montreal</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_33975620.jpg', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_33975620.jpg", :class=> "img-fluid", :width => "600", :height => "399") %>
+
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Art Museum Montreal</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_41696502.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_41696502.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Bank Of Montreal offices</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+							<div class="col-md-3 col-sm-3 mix corporate awards"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_53477661.jpg', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_53477661.jpg", :class=> "img-fluid", :width => "600", :height => "399") %>
+
+										
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Best Elevator Design A ward 2021</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+							<div class="col-md-3 col-sm-3 mix corporate awards"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_66781279.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_66781279.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+
+
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Biodome Montreal, Fastest Elevator award 2021</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+							<div class="col-md-3 col-sm-3 mix residential awards"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_72034307.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_72034307.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Bill Gates House, Most expensive home elevator award</h3>
+										<ul class="list-inline categories m-0">
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+							<div class="col-md-3 col-sm-3 mix corporate"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<%= link_to 'assets/1280x960/AdobeStock_73868131.png', :class=> 'ico-rounded lightbox', :'data-plugin-options' => "{'type':'image'}" do %>
+													<%= content_tag :span, '', :class => "fa fa-plus fs-20" %>
+												<% end %>
+
+											</span>
+										</span>
+
+										<%= image_tag("1280x960/AdobeStock_73868131.png", :class=> "img-fluid", :width => "600", :height => "399") %>
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Police station Montreal</h3>
+									</div>
+
+								</div>
+
+							</div><!-- /item -->
+
+
+						</div>
+
+
+				</div>
+			</section>
+			<!-- /PORTFOLIO -->
+
+
+
+
+			<!-- Testimonials -->
+			<section class="section-xs dark">
+				<div class="container">
+
+					
+					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
+						<div id= "CEO" class="testimonial">
+							<figure>								
+								<%= image_tag("CEO.jpg", :class=> "rounded", :height => "400px") %>
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">Abdul Akeeb has been the CEO of Rocket Elevators since 1976, which makes him quite old.</p>
+								<cite>
+									Abdul Akeeb
+									<span>CEO.</span>
+								</cite>
+							</div>
+						</div>
+						<div id="employee" class="testimonial">
+							<figure>
+								<%= image_tag("employee-of-the-month.jpg", :class=> "rounded", :height => "400px") %>
+							</figure>
+							<div class="testimonial-content p-0">
+								<p class="lead">Matthew has demonstrated excellent desgins and execution of projects which makles him the new Employee of the Month.</p>
+								<cite>
+									Matthew Dandurand
+									<span>Employee of the Momnth.</span>
+								</cite>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Testimonials -->
+
+
+
+
+
+			<!-- News -->
+			<section id="news">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Recent News</h2>
+					</div>
+
+						
+					<div class="owl-carousel owl-padding-10 buttons-autohide controlls-over" data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/news/daily-news/tallest-residential-development-on-singapore-river-revealed/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/09/Tallest-Residential-Development-on-Singapore-River-Revealed-1200x480.jpg.webp" alt="">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/news/daily-news/tallest-residential-development-on-singapore-river-revealed/">Tallest Residential Development on Singapore River Revealed</a></h4>
+							<p class="text-left">CapitaLand Ltd. and City Developments Ltd. (CDL) have unveiled the design of their latest joint residential development, CanningHill Piers, which is the tallest Residential building in Singapore.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/tke-acquires-florida-company-jacksonville-riverfront-tower-projects-and-more/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/08/TKE-acquires-Florida-company-Jacksonville-Riverfront-tower-projects-and-more-1200x480.jpg.webp" alt="">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/tke-acquires-florida-company-jacksonville-riverfront-tower-projects-and-more/">TKE acquires Florida company, Jacksonville Riverfront, tower projects and more</a></h4>
+							<p class="text-left">TK Elevator (TKE) announced in June that it has acquired Accurate Elevator, a longtime vertical-transportation (VT) contractor that has provided services in the Florida Keys for many years. Based in Marathon, Florida, Accurate Elevator has focused on new installation, modernization, preventive maintenance and repair services for commercial and residential buildings.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/otis-provides-vt-westbank-campus-adds-residential-tower/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/08/Otis-provides-VT-Westbank-Campus-adds-residential-tower-1200x480.jpg.webp" alt="">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/otis-provides-vt-westbank-campus-adds-residential-tower/">Otis provides VT, Westbank Campus adds residential tower</a></h4>
+							<p class="text-left">Construction is wrapping up on 30 Otis Street, SoMa, in San Francisco as the tower is preparing for move-ins later this summer, San Francisco YIMBY reported in June. The SoMa development will add 416 residences to the local housing market, along with retail and an updated home for the City Ballet School.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/chicago-yimby-mixed-use-developments-and-tower-approved/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/08/Chicago-YIMBY-Mixed-use-developments-and-tower-approved--1200x480.jpg.webp" alt="">
+							</a>
+
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/chicago-yimby-mixed-use-developments-and-tower-approved/">Chicago YIMBY: Mixed-use developments and tower approved.</a></h4>
+							<p class="text-left">The Chicago Plan Commission has approved the updated mixed-use development proposal at 1150 West Lake Street in the West Loop, the source reported in June. Designed by Gensler, the new construction consists of a two-tower scheme. The southern tower will rise 29 stories, topping off at 330 ft, with residential, retail and parking space.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/vt-tall-buildings-coming-to-lrt-lines-and-vancouver/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/04/VT-tall-buildings-coming-to-LRT-lines-and-Vancouver-1200x480.jpg.webp" alt="">
+							</a>
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/vt-tall-buildings-coming-to-lrt-lines-and-vancouver/">VT, tall buildings coming to LRT lines and Vancouver</a></h4>
+							<p class="text-left">Otis is providing hundreds of elevators and escalators to light rail transit (LRT) projects in Toronto, Montreal and Ottawa, the OEM announced in February. In Toronto, Otis is providing 111 heavy-duty, commercial-grade NPETM escalators for the Eglinton Crosstown line, part of the largest transit expansion in the city’s history.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/mta-projects-record-breaking-towers-and-more/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/08/MTA-projects-record-breaking-towers-and-more-1200x480.jpg.webp" alt="">
+							</a>
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/mta-projects-record-breaking-towers-and-more/">MTA projects, record-breaking towers and more</a></h4>
+							<p class="text-left">On May 27, Gov. Andrew Cuomo announced completion of civil construction on the Metropolitan Transportation Authority’s (MTA) East Side Access megaproject. Outfitted with 17 high-rise Schindler escalators, including the longest in the MTA system at 182 ft, the project connects the Long Island Rail Road (LIRR) to a new, 350,000-ft2 passenger terminal under Grand Central Terminal.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/busy-market-generates-work-for-construction-and-vertical-transportation-industries/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/07/Busy-market-generates-work-for-construction-and-vertical-transportation-industries-1200x480.jpg.webp" alt="">
+							</a>
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/busy-market-generates-work-for-construction-and-vertical-transportation-industries/">Busy market generates work for construction and vertical-transportation industries</a></h4>
+							<p class="text-left">KONE has won an order to supply 15 custom-made elevators and escalators for the new “Arbor” office building at Western Yards, phase one of the Bankside Yards mixed-use development in London, the company announced in April. Located along the South Bank of the River Thames between Blackfriars Bridge and the Tate Modern museum and built above historic railway arches, the 20-story Arbor will combine sustainable solutions and intelligent technologies to meet stringent environmental standards</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+								<li>
+							</ul>
+						</div>
+						<div class="img-hover">
+							<a href="https://elevatorworld.com/article/hitachi-elevator-kone-add-more-than-260-units-in-shanghai-chengdu/">
+								<img class="img-fluid" src="https://elevatorworld.com/wp-content/uploads/2021/04/Magic-Cube-1200x480.jpg.webp" alt="">
+								
+								
+							</a>
+							<h4 class="text-left mt-20"><a href="https://elevatorworld.com/article/hitachi-elevator-kone-add-more-than-260-units-in-shanghai-chengdu/">Hitachi Elevator, KONE add more than 260 units in Shanghai, Chengdu.</a></h4>
+							<p class="text-left">Hitachi Elevator (China) Co., Ltd. is providing 201 elevators and escalators to 14 stations along Shanghai Metro Line 15, which opened for trial operations in January. Starting at Gucun Park to the north and ending at Zizhu High-Tech Industrial Park to the south, the 42-km underground line is the longest (in kilometers) to open in the country all at once. Hitachi’s EX-BPG escalators, which the company states provides better braking than standard industry models, were used.</p>
+							<ul class="text-left fs-12 list-inline list-separator">
+								<li>
+									<i class="fa fa-calendar"></i> 
+									29th Jan 2017
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /News -->
+
+			<!-- Clients -->
+			<section id="clients" class="alternate">
+				<div class="container">
+
+					<div class="heading-title heading-dotted text-center">
+						<h2>Our Clients</h2>
+					</div>
+
+					<ul class="row clients-dotted list-inline">
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+							
+								<%= image_tag"Partners/images (1).jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								
+								<%= image_tag"Partners/images (1).png", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (2).jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (2).png", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								
+								<%= image_tag"Partners/images (3).jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (3).png", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (4).jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (4).png", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (5).jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images (5).png", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images.jpg", :class => "img-fluid"%>
+							</a>
+						</li>
+						<li class="col-md-3 col-sm-3 col-6">
+							<a>
+								<%= image_tag"Partners/images.png", :class => "img-fluid"%>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+			<!-- /Clients -->
+
+
+
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Contact Us</h2>
+						<p class="lead font-lato">Rocket Elevators</p>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+						<!-- FORM -->
+						<div class="col-md-8 col-sm-8">
+
+							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+
+							
+							<!--
+								MESSAGES
+								
+									How it works?
+									The form data is posted to php/contact.php where the fields are verified!
+									php.contact.php will redirect back here and will add a hash to the end of the URL:
+										#alert_success 		= email sent
+										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
+										#alert_mandatory	= email not sent - required fields empty
+										Hashes are handled by assets/js/contact.js
+
+									Form data: required to be an array. Example:
+										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
+										Also, add `required` to input fields if is a mandatory field. 
+										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
+
+									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
+												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
+
+									WARNING! Do not change the `email` and `name`!
+												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+							-->
+
+							<!-- Alert Success -->
+							<div id="alert_success" class="alert alert-success mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Thank You!</strong> Your message successfully sent!
+							</div><!-- /Alert Success -->
+
+
+							<!-- Alert Failed -->
+							<div id="alert_failed" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>[SMTP] Error!</strong> Internal server error!
+							</div><!-- /Alert Failed -->
+
+
+							<!-- Alert Mandatory -->
+							<div id="alert_mandatory" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+							</div><!-- /Alert Mandatory -->
+
+
+							<%= form_with model: @lead , url: root_path do  |f|%>
+								<%= invisible_captcha %> <!-- For captcha gem (bonus) -->
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+											<div id="name" class="col-md-4">
+												<label for="contact:name">Full Name *</label>
+												<%= f.text_field :full_name , class: "form-control", :required => true %>
+											</div>
+											<div id="email" class="col-md-4">
+												<label for="contact:email">E-mail Address *</label>
+												<%= f.text_field :email , class: "form-control", :required => true %>
+											</div>
+											<div id="phone" class="col-md-4">
+												<label for="contact:phone">Phone</label>
+												<%= f.text_field :phone_number , class: "form-control", :required => true %>
+											</div>
+											<div id="company_name" class="col-md-4">
+												<label for="contact:name">Business Name *</label>
+												<%= f.text_field :company_name , class: "form-control", :required => true %>
+											</div>
+											<div id="project_name" class="col-md-4">
+												<label for="contact:name">Project Name *</label>
+												<%= f.text_field :project_name , class: "form-control", :required => true %>
+											</div>
+									</div>
+									<div class="row">
+											<div id="project_description" class="col-md-8">
+												<label for="contact:subject">Project Description *</label>
+												<%= f.text_field :project_description , class: "form-control", :required => true %>
+											</div>
+											<div id="department" class="col-md-4">
+												<label for="contact_department">Department</label>
+												<%= f.select(:department, ['Select', 'Marketing', 'Corporate', 'Residential'], {}, { :class => 'form-control pointer' }) %>
+											</div>
+									</div>
+									<div class="row">
+											<div id="message" class="col-md-12">
+												<label for="contact:message">Message *</label>
+												<%= f.text_area :message , class: "form-control", :required => true, rows: 8  %>
+											</div>
+									</div>
+									<div id="attachment" class="row">
+											<div class="col-md-12">
+												<%= f.label :upload, "Upload a File"%>
+
+												<!-- custom file upload -->
+												<%= f.file_field :upload ,class: 'custom-file-upload','data-btn-text' => 'Select a file'%>
+												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
+
+											</div>
+									</div>
+
+								</fieldset>
+
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+									</div>
+								</div>
+								<% end %>
+
+						</div>
+						<!-- /FORM -->
+
+
+						<!-- INFO -->
+						<div class="col-md-4 col-sm-4">
+
+							<h2>Visit Us</h2>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707630.642873346!2d-72.98985744894007!3d46.1471179048457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc911f05991afd7%3A0x852cd133f4fe32e9!2sCodeBoxx!5e0!3m2!1sen!2sca!4v1632334363174!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong>4468 Rue Wellington Suite 204, Verdun, QC H4G 1W5</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:(418) 555-1234">(418) 555-1234</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<%# <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script> %>
+		<%= javascript_include_tag "jquery-3.3.1.min" %>
+
+		<%= javascript_include_tag "scripts" %>
+		<%# <script src="assets/js/scripts.js"></script> %>
+
+		<!-- REVOLUTION SLIDER -->
+		 <%= javascript_include_tag "jquery.themepunch.tools.min" %> 
+		<%# <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script> %>
+		 <%= javascript_include_tag "jquery.themepunch.revolution.min" %> 
+		<%# <script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script> %>
+		 <%= javascript_include_tag "demo.revolution_slider" %> 
+		<%# <script src="assets/js/view/demo.revolution_slider.js"></script> %>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<!--<%= javascript_include_tag "contact" %>-->
+		<%# <script src="assets/js/contact.js"></script> %>
+
+		<%# <!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER --> %>
+
+

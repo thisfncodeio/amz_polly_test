@@ -1,0 +1,67 @@
+<!-- Google Maps API Testing -->
+<head>
+<style type="text/css">
+#main { padding-right: 15px; }
+.infoWindow { width: 200px; }
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['mapsAPI_id']%>" data-turbolinks-eval="false"></script>
+<script type="text/javascript">
+
+	var map;
+	var center = new google.maps.LatLng(45, -99);
+	function init() {
+		var options = {
+			center: center,
+			zoom: 5,
+		}
+		map = new google.maps.Map(document.getElementById("map_canvas"), options);
+		infoWindow = new google.maps.InfoWindow({ content: statsInfo});
+
+	<% Building.all.each do |building| %>
+
+	<% b_id = Battery.where(building_id: building.id).ids 
+				col = Column.where(battery_id: b_id)
+				col_id = Column.where(battery_id: b_id).ids
+				elevators = Elevator.where(column_id: col_id).count
+	floor = col.maximum(:number_of_floor) %>
+
+	//stats window info
+		var statsInfo = '<h1>' + "<%= building.customer.company_contact_name %>" + '</h2>' + '<br>' + '<p>' + 
+						"<h3>location: </h3> " + "<%= building.address.latitude %>" + ' , ' + "<%= building.address.longitude %>" + '<br />' +
+						"<h3>floors: </h3> " + "<%= floor %>" + '<br />' +
+						"<h3>batteries: </h3> " + "<%= building.batteries.count %>" + '<br />' +
+						"<h3>columns: </h3> " + "<%= building.batteries.columns.count %>" + '<br />' +
+						"<h3>elevators: </h3> " + "<%= elevators %>" + '<br />' +
+						"<h3>technical contact: </h3> " + "<%= building.tech_full_name %>" + '<br />';	
+
+
+	//markers
+		var markers = new google.maps.Marker({
+			map:map,
+			position: {lat: parseFloat("<%= building.address.latitude %>"), lng: parseFloat("<%= building.address.longitude %>")},
+			info: statsInfo
+		});
+
+	//marker click event
+	google.maps.event.addListener( markers, 'click', function() {
+		infoWindow.setContent( this.info ); infoWindow.open( map, this);
+	});
+
+	markers.setMap(map);
+
+	<% end %>
+	}
+
+</script>
+</head>
+<body onload="init();">
+<section id="main">
+<div id="map_canvas" style="width: 100%; height: 700px;"></div>
+</section>
+</body>
+<!-- /Google Maps API Testing -->
+	
+<%# "<h3> weather: </h3 >" + "<%= JSON.parse(response.body)["current"]["condition"]["text"] " + '<br />' +  %>
+<%# "<h3> Temperature </h3>" + "<%= JSON.parse(response.body)["current"]["temp_c"] " + '<br />'; %>
+<%# <% response = HTTParty.get('http://api.weatherapi.com/v1/current.json?key=' + ENV["weatherAPI_id:"] + '&q=' + building.address.city) %>
+

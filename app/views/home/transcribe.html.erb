@@ -1,0 +1,62 @@
+<section id="requestForm">
+    <div class="container">
+
+        <header class="text-center mb-30">
+            <h2>Conversation Transcription </h2>
+            <p class="lead font-lato">Service </p>
+            <hr />
+        </header>
+
+    <div class="container">    
+
+
+                <%= form_with url: "/transcribe",method: :post do |f| %>
+
+                            
+                        
+                            <div id="attachment" class="row">
+                                <div class="col-md-12">
+                                    <%= f.label :upload, "Upload a File"%>
+
+                                    <!-- custom file upload -->
+                                    <%= f.file_field :upload ,accept: 'audio/wav',class: 'custom-file-upload','data-btn-text' => 'Select a file'%>
+                                    <small class="text-muted block">Max file size: 10Mb (wav)</small>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i>Transcribe</button>
+                                </div>
+                            </div>
+
+
+                                
+                        <% end %>
+
+
+            <% if @transcription %>
+  
+                 <table width="100%">
+                    <tr>
+                        <td align="right" valign="top">Result</td>
+                        <td><textarea class="transcriptionResult" id="resultDiv" style="display: inline-block;width:800px;height:150px"><%= @transcription %></textarea></td>
+                    </tr>
+                </table>
+
+            <% end %>
+
+
+
+
+            
+    </div>
+
+    </div>
+            <!-- /FORM -->
+
+    
+</section>
+<!-- /CONTACT -->
+

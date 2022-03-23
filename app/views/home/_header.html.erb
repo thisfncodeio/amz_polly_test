@@ -1,0 +1,98 @@
+
+<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="<%= root_path %>">
+						<%= image_tag "R2.png" %>
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="/#">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="/#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="/#Portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="/#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="/#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="/#contact">
+											CONTACT
+										</a>
+									</li>
+
+									<% if user_signed_in? %>
+										<li><%= link_to "INTERVENTIONS", '/interventions'%></li>
+										<li><%= link_to 'BACK OFFICE', rails_admin_path %></li>
+										<li><%= link_to 'SIGN OUT', destroy_user_session_path, :method => :delete  %></li>
+									<% else %>
+										<li><%= link_to 'SIGN IN', new_user_session_path%>
+									<% end %></li>
+
+								</ul>
+
+							</nav>
+						</div>
+
+
+						</nav>
+					</div>
+
+				</div>
+
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLV36D5E74"></script>
+				<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'G-CLV36D5E74');
+				</script>
+			</header>
+			<!-- /Top Nav -->
+
+		</div>
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->

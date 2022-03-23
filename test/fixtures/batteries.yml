@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  status: MyString
+  date_of_commission: 2021-11-02
+  date_of_last_inspection: 2021-11-02
+  certificate_of_operations: MyString
+  information: MyString
+  notes: MyText
+
+two:
+  type: 
+  status: MyString
+  date_of_commission: 2021-11-02
+  date_of_last_inspection: 2021-11-02
+  certificate_of_operations: MyString
+  information: MyString
+  notes: MyText
